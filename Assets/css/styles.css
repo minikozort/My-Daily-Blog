@@ -1,4 +1,3 @@
-
 /* Setting the common attributes colors */
 :root {
     --dark-made-background: #1b1b1b;
@@ -9,7 +8,8 @@
     --text-light-color: #fff;
 
 }
- /* Reset Css Code */
+
+/* Reset Css Code */
 *,
 *:before,
 *:after {
@@ -52,4 +52,56 @@ code {
 ​ol,
 ul {
     list-style: none;
+}
+
+/* label {
+width: 500px;
+height: 200px;
+position: relative;
+display: block;
+background: var(--light-mode-background);
+border-radius: 200px;
+box-shadow: inset 0px 5px 15px var(--text-dark-color) inset 0px -5px 15px var(--light-mode-background);
+
+} */
+.toggleback{
+    display: flex;
+    background: var(--dark-made-background);
+    color: var(--text-light-color)
+   }
+body{
+ display: flex;
+ justify-content: end;
+ background: var(--dark-made-background);
+ color: var(--text-light-color)
+}
+
+#togglemode{
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: inset 0px 8px 80px rgba(0,0,0,0.5),
+                inset 0px 8px 8px rgba(0,0,0,0.5),
+                inset 0px -4px 4px rgba(0,0,0,0.5);
+}
+ 
+#togglemode .indicator
+{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: inset 0px 8px 40px rgba(0,0,0,0.10),
+                inset 0px 4px 4px rgba(255,255,255,0.3),
+                inset 0px -4px 4px rgba(255,255,255,0.3);
+}
+#togglemode.active .indicator{
+    left: 40px;
 }
