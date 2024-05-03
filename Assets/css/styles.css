@@ -1,3 +1,5 @@
+
+/* Setting the common attributes colors */
 :root {
     --dark-made-background: #1b1b1b;
     --light-mode-background: #9acdd1;
@@ -7,7 +9,7 @@
     --text-light-color: #fff;
 
 }
-
+ /* Reset Css Code */
 *,
 *:before,
 *:after {
