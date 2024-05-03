@@ -6,7 +6,7 @@
     --cicle-dark-color: #830349;
     --text-dark-color: #000;
     --text-light-color: #fff;
-
+    --font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* Reset Css Code */
@@ -53,33 +53,26 @@ code {
 ul {
     list-style: none;
 }
-
-/* label {
-width: 500px;
-height: 200px;
-position: relative;
-display: block;
-background: var(--light-mode-background);
-border-radius: 200px;
-box-shadow: inset 0px 5px 15px var(--text-dark-color) inset 0px -5px 15px var(--light-mode-background);
-
-} */
-.toggleback{
-    display: flex;
-    background: var(--dark-made-background);
-    color: var(--text-light-color)
-   }
+/* Sets the body background color and display */
 body{
- display: flex;
- justify-content: end;
- background: var(--dark-made-background);
- color: var(--text-light-color)
+    background-color: var(--dark-made-background)
 }
+/* when toggled changes the background color */
 .bodytoggle.active{
     background: var(--light-mode-background);
 }
+/* when toggled changes the background color */
 .toggleback.active{
     background: var(--light-mode-background);
+/* Sets the paramiters of the dark-mode - light mode button */
+}
+
+.header {
+    /*sets properties for the header such as background color and text color*/
+    padding: 20px;
+    font-family: var(--font-family);
+    background-color: var(--dark-made-background);
+    color: var(--text-light-color);
 }
 #togglemode{
     position: relative;
@@ -108,5 +101,10 @@ body{
                 inset 0px -4px 4px rgba(255,255,255,0.3);
 }
 #togglemode.active .indicator{
-    left: 40px;
-}
+    Left: 40px;
+    background: var(--light-mode-background);
+    box-shadow: 0px 8px 40px rgba(0,0,0,0.5), 
+                inset 0px 4px 4px rgba(255,255,255,0.2), 
+                inset 0px -4px 4px rgba(255,255,255,0.2);  
+
+} */
