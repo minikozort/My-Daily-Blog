@@ -75,7 +75,12 @@ body{
  background: var(--dark-made-background);
  color: var(--text-light-color)
 }
-
+.bodytoggle.active{
+    background: var(--light-mode-background);
+}
+.toggleback.active{
+    background: var(--light-mode-background);
+}
 #togglemode{
     position: relative;
     display: block;
