@@ -6,3 +6,28 @@
     --text-light-color: #fff;
 
 }
+/* Setting the attributes for the form content */
+#blog{
+    display: flex;
+    justify-content: top;
+}
+/* Setting the attributes for the form content */
+.divform{
+    display: flex;
+    float: right;
+    width: 500px;
+    height: 500px;
+    border-top: solid;
+    border-left: solid;
+    margin-top: 20px;
+}
+/* Setting the text color of the form */
+.form{
+ color: var(--text-light-color)
+}
+
+/* Setting the text color for the light mode when active */
+.form.active{
+
+color: var(--text-dark-color)
+}

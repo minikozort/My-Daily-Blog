@@ -11,19 +11,44 @@
 
 <body class="bodytoggle">
     <header>
-    <nav class="toggleback">
-        <div id="togglemode">
-            <i class="indicator"></i>
-        </div>
-</header>
-    <div class="circled-box">
-        <div class="circle">
-            My First Blog
-            <form class="form">
-                What's on your mind?
-                <button id = "btn" >Submit</button>
-            </form>
-        </div>
+        <nav class="toggleback">
+            <div id="togglemode">
+                <i class="indicator"></i>
+            </div>
+    </header>
+    <section>
+        <section>
+            <div class="box">
+                <div class="circle"> My First Blog </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="divform">
+                <form class="form">What's on your mind?
+
+                    <div>
+                        <label id="firstnametext" for="firstname">First Name: </label>
+                        <input id="user_first_name" type="text" />
+                    </div>
+                    <div>
+                        <label id="lastnametext" for="lastname">Last Name: </label>
+                        <input id="user_last_name" type="text" />
+                    </div>
+                    <div>
+                        <label id="emailtext" for="email">Email: </label>
+                        <input id="user_email" type="email" />
+                    </div>
+                    <div>
+                        <label id=blog for="blog">Type your thoughts here...</label>
+                        <textarea id="userblog" rows="5" colm="100" type="text">
+                    </textarea>
+                    </div>
+                    <button id="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </section>
 
 </body>
 <script src="Assets/js/logic.js"></script>
@@ -43,3 +68,8 @@
 .form{
   float:left;
 } -->
+
+<!-- <div>
+    <div style="float: left; width: 50%">I'm on the left</div>
+    <div style="float: right; width: 50%">I'm on the right</div>
+</div> -->

@@ -107,4 +107,28 @@ body{
                 inset 0px 4px 4px rgba(255,255,255,0.2), 
                 inset 0px -4px 4px rgba(255,255,255,0.2);  
 
-} */
+} 
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 500px;
+    height: 500px;
+    border-top: solid;
+    border-right: solid;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+
+.circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 5000px;
+    background: var(--cirle-light-color);
+    text-align: center;
+    border: solid;
+}
+
