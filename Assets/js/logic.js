@@ -9,40 +9,139 @@ toggle.onclick = function () {
 
 }
 
-const firstName = document.getElementById('user-first-name');
-const lastName = document.getElementById('user-last-name');
-const userEmail = document.getElementById('user-email');
-const userBlogEntry = document.getElementById('userblog');
-const submitButton = document.getElementById('btn');
+
+    const firstName = document.getElementById('user_first_name');
+    const lastName = document.getElementById('user_last_name');
+    const userEmail = document.getElementById('user_email');
+    const userBlogEntry = document.getElementById('userblog');
+    const submitButton = document.getElementById('btn');
 
 
-function showSubmitted(){
+  
+  submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
     const userInput = {
         firstName: firstName.value.trim(),
         lastName: lastName.value.trim(),
         userEmail: userEmail.value.trim(),
         userBlogEntry: userBlogEntry.value.trim(),
-};
-
-localStorage.setItem('userInput', JSON.stringify(userInput));
-}
-
-function renderLastInput() {
-    // Use JSON.parse() to convert text to JavaScript object
-    const lastUserInput = JSON.parse(localStorage.getItem('userInput'));
-    // Check if data is returned, if not exit out of the function
-    if (lastUserInput !== null) {
-      document.getElementById('user-first-name').innerHTML = userInput.firstName;
-      document.getElementById('user-last-name').innerHTML = userInput.lastName;
-      document.getElementById('user-email').innerHTML = userInput.userEmail;
-      document.getElementById('user-blog').innerHTML = userInput.userbl;
     }
-  }
+        // const logDiv = document.createElement('div');
+
+        // // change the style in the class in css.
+        // logDiv.classList.add('userEntry');
+        // logDiv.textContent = text;
+
+        window.location.src  
+
+    let newInput = JSON.parse(localStorage.getItem('userInput'));
+
+    newInput.push(userInput);
+
+    localStorage.setItem('userInput', JSON.stringify(newInput));
+
+    
+
+   
+
+    
+
+  });
+
+//   function renderLastInput() {
+//     // Use JSON.parse() to convert text to JavaScript object
+//     const userInput = JSON.parse(localStorage.getItem('userInput'));
+//     // Check if data is returned, if not exit out of the function
+
+//   }
+
+//     // console.log(renderLastInput());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function showSubmitted(){
+//     const firstName = document.getElementById('user-first-name');
+//     const lastName = document.getElementById('user-last-name');
+// //     const userEmail = document.getElementById('user-email');
+// //     const userBlogEntry = document.getElementById('userblog');
+//     let userInput = {
+//         firstName: firstName.value.trim(),
+//         lastName: lastName.value.trim(),
+//         userEmail: userEmail.value.trim(),
+//         userBlogEntry: userBlogEntry.value.trim(),
+// };
+
+// localStorage.setItem('userInput', JSON.stringify(userInput));
+// }
+
+// function renderLastInput() {
+//     // Use JSON.parse() to convert text to JavaScript object
+//     const lastUserInput = JSON.parse(localStorage.getItem('userInput'));
+//     // Check if data is returned, if not exit out of the function
+//     if (lastUserInput !== null) {
+//       document.getElementById('user-first-name').innerHTML = userInput.firstName;
+//       document.getElementById('user-last-name').innerHTML = userInput.lastName;
+//       document.getElementById('user-email').innerHTML = userInput.userEmail;
+//       document.getElementById('user-blog').innerHTML = userInput.userbl;
+//     }
+//   }
 
 //   submitButton.addEventListener('click', function (event) {
 //     event.preventDefault();
 //     event.currentTarget.showSubmitted();
-    console.log(showSubmitted());
+
     // console.log(renderLastInput());
     
 //   });
