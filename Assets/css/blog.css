@@ -75,6 +75,9 @@ header {
     background-color: var(--dark-made-background);
     color: var(--text-light-color);
 }
+.toggle.active{
+    background: var(--light-mode-background);
+}
 #togglemode{
     position: relative;
     display: block;
