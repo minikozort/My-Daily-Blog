@@ -69,7 +69,6 @@ body{
 
 header {
     /*sets properties for the header such as background color and text color*/
-    display: flex;
     padding: 20px;
     font-family: var(--font-family);
     background-color: var(--dark-made-background);

@@ -132,3 +132,7 @@ body{
     border: solid;
 }
 
+.toggleback{
+    display: flex;
+    justify-content: end;
+}

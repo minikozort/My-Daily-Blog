@@ -32,19 +32,21 @@ toggle.onclick = function () {
         // logDiv.classList.add('userEntry');
         // logDiv.textContent = text;
 
-        window.location.src  
+        // window.location.src  
+const existingUserInput = localStorage.getItem('userInput');
 
-    let newInput = JSON.parse(localStorage.getItem('userInput'));
+    let newInput = []
+
+    if (existingUserInput) {
+    newInput =JSON.parse(existingUserInput);
+
+    }
 
     newInput.push(userInput);
 
     localStorage.setItem('userInput', JSON.stringify(newInput));
 
-    
-
-   
-
-    
+    window.location.href = "blog.html"
 
   });
 
