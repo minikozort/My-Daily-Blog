@@ -17,38 +17,38 @@ function getPost() {
     // Check if data is returned, if not exit out of the function
     if (blogItem !== null) {
     for (i = 0; i < blogItem.length; ++i) {
-        let article = document.createElement('div');
-        article.setAttribute('class', 'div');
-        article.id = 'div'+i;
-        document.body.appendChild(div);
+        let article = document.createElement('article');
+        article.setAttribute('class', 'article');
+        article.id = 'article'+i;
+        document.body.appendChild(article);
 
-        //for (var key in blogItem[i]) {
-        // blogItem.forEach((element) => {
-        //     let card = document.createElement('card');
-        //     card.id = 'card';
-        //     card.setAttribute('class', 'enteredusername')
-        //     card.innerHTML = element.titleName;
-        //     document.getElementById('div'+i).appendChild(card);
-        //     console.log(blogItem[i]);
-        // })
+        // for (var key in blogItem[i]) {
+        blogItem.forEach((element) => {
+            let card = document.createElement('card');
+            card.id = 'card';
+            card.setAttribute('class', 'enteredtitle')
+            card.innerHTML = element.titleName;
+            document.getElementById('article'+i).appendChild(card);
+            // console.log(blogItem[i]);
+        })
 
-        // blogItem.forEach((element) => {
-        //     let card = document.createElement('card');
-        //     card.id = 'card'+i;
-        //     card.setAttribute('class', 'enteredtitle');
-        //     card.innerHTML = element.userBlogEntry;
-        //     document.getElementById('div'+i).appendChild(card);
-        //     console.log(blogItem[i]);
-        // })
+        blogItem.forEach((element) => {
+            let card = document.createElement('card');
+            card.id = 'card'+i;
+            card.setAttribute('class','blogentry');
+            card.innerHTML = element.userBlogEntry;
+            document.getElementById('article'+i).appendChild(card);
+            // console.log(blogItem[i]);
+        })
 
-        // blogItem.forEach((element) => {
-        //     let card = document.createElement('card');
-        //     card.id = 'card'+i;
-        //     card.setAttribute('class', 'blogentry');
-        //     card.innerHTML = element.userName;
-        //     document.getElementById('article'+i).appendChild(card);
-        //     console.log(blogItem[i]);
-        // })
+        blogItem.forEach((element) => {
+            let card = document.createElement('card');
+            card.id = 'card'+i;
+            card.setAttribute('class','enteredusername');
+            card.innerHTML = element.userName;
+            document.getElementById('article'+i).appendChild(card);
+            // console.log(blogItem[i]);
+        })
 
     }
 
