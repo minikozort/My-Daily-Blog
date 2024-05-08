@@ -124,3 +124,26 @@ header {
     bottom: 0;
     
 }
+
+.article{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    border: #000;
+    border-spacing: 100px;
+    padding: 2px;
+}
+
+.pre {
+    text-align: left;
+    border: 2px solid Black;
+    display: inline-block;
+}
+
+.card {
+    display: flex;
+    border: #000;
+    border-radius: 50%;
+    border-spacing: 100px;
+    text-align: center;
+}
