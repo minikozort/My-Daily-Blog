@@ -27,12 +27,12 @@ toggle.onclick = function () {
     }
 
 
-    // if( userName == "" || titleName == "" || userBlogEntry == ""){
-    //     alert ("Please Complete Form")
-    //     return;
-    // }
+    if( userName.value == "" || titleName.value == "" || userBlogEntry.value == ""){
+       alert ("Please Complete Form")
+        return;
+    }
   
-    
+
         // const logDiv = document.createElement('div');
 
         // // change the style in the class in css.
@@ -53,13 +53,8 @@ const existingUserInput = localStorage.getItem('userInput');
 
     localStorage.setItem('userInput', JSON.stringify(newInput));
     
-    if (userInput == ""){
-        alert ("Please Fill Out The Form");
-        
-    }
-    else{
         window.location.href = "blog.html"
-    }
+
    
 
     
