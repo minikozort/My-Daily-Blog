@@ -150,11 +150,12 @@ header {
     border-spacing: 100px;
     text-align: center;
 
-}
+} 
 
 .enteredtitle{
     display: flex;
     border: #000;
+    font-weight: bold;
     border-radius: 50%;
     border-spacing: 100px;
     text-align: center;
@@ -164,8 +165,26 @@ header {
 .blogentry{
     display: flex;
     border: #000;
+    font-style: italic;
     border-radius: 50%;
     border-spacing: 100px;
     text-align: center;
 
 }
+
+#myfirstblog{
+    text-align: center;
+}
+
+.article{
+    display: block;
+    border-style: solid;
+    border: 10px black;
+    border-top: black;
+
+}
+
+/* #enteredtitlecard{
+    border-style: solid;
+    border-top: black;
+} */
