@@ -10,9 +10,8 @@ toggle.onclick = function () {
 }
 
 
-    const firstName = document.getElementById('user_first_name');
-    const lastName = document.getElementById('user_last_name');
-    const userEmail = document.getElementById('user_email');
+    const userName = document.getElementById('user-name');
+    const titleName = document.getElementById('title-name');
     const userBlogEntry = document.getElementById('userblog');
     const submitButton = document.getElementById('btn');
 
@@ -21,11 +20,19 @@ toggle.onclick = function () {
   submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     const userInput = {
-        firstName: firstName.value.trim(),
-        lastName: lastName.value.trim(),
-        userEmail: userEmail.value.trim(),
+        userName: userName.value.trim(),
+        titleName: titleName.value.trim(),
         userBlogEntry: userBlogEntry.value.trim(),
+
     }
+
+
+    // if( userName == "" || titleName == "" || userBlogEntry == ""){
+    //     alert ("Please Complete Form")
+    //     return;
+    // }
+  
+    
         // const logDiv = document.createElement('div');
 
         // // change the style in the class in css.
@@ -45,12 +52,21 @@ const existingUserInput = localStorage.getItem('userInput');
     newInput.push(userInput);
 
     localStorage.setItem('userInput', JSON.stringify(newInput));
+    
+    if (userInput == ""){
+        alert ("Please Fill Out The Form");
+        
+    }
+    else{
+        window.location.href = "blog.html"
+    }
+   
 
-    window.location.href = "blog.html"
+    
 
   });
 
-  
+
 //   function renderLastInput() {
 //     // Use JSON.parse() to convert text to JavaScript object
 //     const userInput = JSON.parse(localStorage.getItem('userInput'));
