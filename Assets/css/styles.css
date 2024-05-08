@@ -55,15 +55,15 @@ ul {
 }
 /* Sets the body background color and display */
 body{
-    background-color: var(--dark-made-background)
+    background-color: var(--light-mode-background)
 }
 /* when toggled changes the background color */
 .bodytoggle.active{
-    background: var(--light-mode-background);
+    background: var(--dark-made-background);
 }
 /* when toggled changes the background color */
 .toggleback.active{
-    background: var(--light-mode-background);
+    background: var(--dark-made-background);
 /* Sets the paramiters of the dark-mode - light mode button */
 }
 
@@ -71,8 +71,8 @@ body{
     /*sets properties for the header such as background color and text color*/
     padding: 20px;
     font-family: var(--font-family);
-    background-color: var(--dark-made-background);
-    color: var(--text-light-color);
+    background-color: var(--light-mode-background);
+    color: var(--text-dark-color);
 }
 #togglemode{
     position: relative;
@@ -102,7 +102,7 @@ body{
 }
 #togglemode.active .indicator{
     Left: 40px;
-    background: var(--light-mode-background);
+    background: var(--dark-made-background);
     box-shadow: 0px 8px 40px rgba(0,0,0,0.5), 
                 inset 0px 4px 4px rgba(255,255,255,0.2), 
                 inset 0px -4px 4px rgba(255,255,255,0.2);  
@@ -135,4 +135,11 @@ body{
 .toggleback{
     display: flex;
     justify-content: end;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }

@@ -50,6 +50,7 @@ const existingUserInput = localStorage.getItem('userInput');
 
   });
 
+  
 //   function renderLastInput() {
 //     // Use JSON.parse() to convert text to JavaScript object
 //     const userInput = JSON.parse(localStorage.getItem('userInput'));
