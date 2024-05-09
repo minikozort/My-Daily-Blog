@@ -74,6 +74,11 @@ body{
     background-color: var(--light-mode-background);
     color: var(--text-dark-color);
 }
+
+.headerstyle{
+    border-bottom: solid;
+    border-color: var(--dark-made-background);
+}
 #togglemode{
     position: relative;
     display: block;
@@ -114,8 +119,8 @@ body{
     justify-content: center;
     align-items: center;
     float: left;
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 100vh;
     border-top: solid;
     border-right: solid;
     margin-top: 20px;
@@ -125,8 +130,8 @@ body{
 
 .circle{
     display: flex;
-    width: 250px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
     border-radius: 5000px;
     background: var(--cirle-light-color);
     align-items: center;
@@ -137,6 +142,8 @@ body{
 .toggleback{
     display: flex;
     justify-content: end;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .footer{

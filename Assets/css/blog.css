@@ -6,7 +6,7 @@
     --cicle-dark-color: #830349;
     --text-dark-color: #000;
     --text-light-color: #fff;
-    --font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* Reset Css Code in the web browser */
@@ -53,18 +53,21 @@ code {
 ul {
     list-style: none;
 }
+
 /* Sets the body background color and display */
-body{
+body {
     background-color: var(--light-mode-background)
 }
+
 /* when toggled changes the background color */
-.bodytoggle.active{
+.bodytoggle.active {
     background: var(--dark-made-background);
 }
+
 /* when toggled changes the background color */
-.toggleback.active{
+.toggleback.active {
     background: var(--dark-made-background);
-/* Sets the paramiters of the dark-mode - light mode button */
+    /* Sets the paramiters of the dark-mode - light mode button */
 }
 
 header {
@@ -77,27 +80,45 @@ header {
     background-color: var(--light-mode-background);
     color: var(--text-light-color);
 }
-/* 
-#myfirstblog{
-    display: flex;
-    justify-content: start;
-} */
 
-#backbtn{
-    margin-right: 5px;
+.end-btn {
+    margin-top: 2vw;
+    background-color: #DAA521;
+    border: none;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
 }
-.divbtn{
 
+#backbtn {
+    margin-right: 20px;
+    background-color: var(--dark-made-background);
+    border: none;
+    width: 5vw;
+    height: 2vw;
+    font-size: 1vw;
+    color: var(--text-light-color);
+    border-radius: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divbtn {
     display: flex;
     justify-content: end;
-align-items: center;
- margin-right: 5px;
+    align-items: center;
+    margin-right: 5px;
 }
 
-.toggle.active{
+.toggle.active {
     background: var(--dark-made-background);
 }
-#togglemode{
+
+#togglemode {
     position: relative;
     display: block;
     width: 80px;
@@ -105,44 +126,44 @@ align-items: center;
     border-radius: 40px;
     transition: 0.3s;
     cursor: pointer;
-    box-shadow: inset 0px 8px 80px rgba(0,0,0,0.5),
-                inset 0px 8px 8px rgba(0,0,0,0.5),
-                inset 0px -4px 4px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 8px 80px rgba(0, 0, 0, 0.5),
+        inset 0px 8px 8px rgba(0, 0, 0, 0.5),
+        inset 0px -4px 4px rgba(0, 0, 0, 0.5);
 }
- 
-#togglemode .indicator
-{
+
+#togglemode .indicator {
     position: absolute;
     top: 0;
-    bottom:0;
+    bottom: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     transform: scale(0.9);
-    box-shadow: inset 0px 8px 40px rgba(0,0,0,0.10),
-                inset 0px 4px 4px rgba(255,255,255,0.3),
-                inset 0px -4px 4px rgba(255,255,255,0.3);
+    box-shadow: inset 0px 8px 40px rgba(0, 0, 0, 0.10),
+        inset 0px 4px 4px rgba(255, 255, 255, 0.3),
+        inset 0px -4px 4px rgba(255, 255, 255, 0.3);
 }
-#togglemode.active .indicator{
+
+#togglemode.active .indicator {
     Left: 40px;
     background: var(--dark-made-background);
-    box-shadow: 0px 8px 40px rgba(0,0,0,0.5), 
-                inset 0px 4px 4px rgba(255,255,255,0.2), 
-                inset 0px -4px 4px rgba(255,255,255,0.2);  
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.5),
+        inset 0px 4px 4px rgba(255, 255, 255, 0.2),
+        inset 0px -4px 4px rgba(255, 255, 255, 0.2);
 
-} 
+}
 
 /* #backbtn{
     display: block;
     
 } */
 
-.footer{
+.footer {
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 0;
-    
+
 }
 
 /* .article{
@@ -163,16 +184,16 @@ align-items: center;
     border-spacing: 100px;
     text-align: center;
 } */
-.enteredusername{
+.enteredusername {
     display: flex;
     border: #000;
     border-radius: 50%;
     border-spacing: 100px;
     text-align: center;
 
-} 
+}
 
-.enteredtitle{
+.enteredtitle {
     display: flex;
     border: #000;
     font-weight: bold;
@@ -182,7 +203,7 @@ align-items: center;
 
 }
 
-.blogentry{
+.blogentry {
     display: flex;
     border: #000;
     font-style: italic;
@@ -194,7 +215,7 @@ align-items: center;
 
 
 
-.article{
+.article {
     display: block;
     border-style: solid;
     border: 2px black solid;
@@ -205,4 +226,3 @@ align-items: center;
     border-style: solid;
     border-top: black;
 } */
-
