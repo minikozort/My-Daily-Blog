@@ -15,10 +15,10 @@ submitButton.addEventListener('click', function (event) {
 
     if (userName.value == "" || titleName.value == "" || userBlogEntry.value == "") {
 
-        const alertmessage = ('Please Complete Form');
+        const alertMessage = ('Please Complete All Form');
         let error = document.getElementById('error');
-        error.parentElement(form);
-        document.write(alertmessage);
+        error.textContent = alertMessage;
+        setTimeout(alertMessage, 3000);
         return;
     }
 
