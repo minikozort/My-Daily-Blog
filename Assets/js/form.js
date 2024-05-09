@@ -13,29 +13,33 @@ submitButton.addEventListener('click', function (event) {
     }
 
 
-    if( userName.value == "" || titleName.value == "" || userBlogEntry.value == ""){
-       alert ("Please Complete Form")
+    if (userName.value == "" || titleName.value == "" || userBlogEntry.value == "") {
+
+        const alertmessage = ('Please Complete Form');
+        let error = document.getElementById('error');
+        error.parentElement(form);
+        document.write(alertmessage);
         return;
     }
-  
 
-const existingUserInput = localStorage.getItem('userInput');
+
+    const existingUserInput = localStorage.getItem('userInput');
 
     let newInput = []
 
     if (existingUserInput) {
-    newInput =JSON.parse(existingUserInput);
+        newInput = JSON.parse(existingUserInput);
 
     }
 
     newInput.push(userInput);
 
     localStorage.setItem('userInput', JSON.stringify(newInput));
-    
-        window.location.href = "blog.html"
 
-   
+    window.location.href = "blog.html"
 
-    
 
-  });
+
+
+
+});

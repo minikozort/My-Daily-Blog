@@ -130,13 +130,15 @@ body{
 
 .circle{
     display: flex;
-    width: 50%;
-    height: 50%;
-    border-radius: 5000px;
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
     background: var(--cirle-light-color);
     align-items: center;
     justify-content: center;
     border: solid;
+    text-wrap: wrap;
+    font-size: 400%;
 }
 
 .toggleback{

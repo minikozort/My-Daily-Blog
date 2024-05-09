@@ -7,36 +7,30 @@
 
 }
 
-#blog{
-    display: flex;
-    justify-content: top;
-}
+
 /* Setting the attributes for the form content */
 .divform{
     display: flex;
     float: right;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     border-top: solid;
     border-left: solid;
     margin-top: 20px;
+    padding-left: 20px;
+    color: var(--text-dark-color);
+    text-align: start;
+    justify-content: center;
+    align-items: center;
 }
 
 .formsection{
     display: flex;
 
-
-}
-/* Setting the attributes for the form content */
-.divform{
- color: var(--text-dark-color);
- text-align: center;
- justify-content: center;
 }
 
 /* Setting the text color for the light mode when active */
 .form.active{
-
 color: var(--text-dark-color)
 }
 
@@ -45,4 +39,20 @@ color: var(--text-dark-color)
     justify-content: center;
     align-items: center;
     height: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+#user-name{
+    width: 100vh;
+}
+#btn{
+    width: 20%;
+    height: 30px;
+    background-color: var(--dark-made-background);
+    color: var(--text-light-color);
 }
