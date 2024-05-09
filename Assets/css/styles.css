@@ -124,11 +124,13 @@ body{
 }
 
 .circle{
+    display: flex;
     width: 250px;
     height: 250px;
     border-radius: 5000px;
     background: var(--cirle-light-color);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     border: solid;
 }
 

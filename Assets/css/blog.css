@@ -69,11 +69,31 @@ body{
 
 header {
     /*sets properties for the header such as background color and text color*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding: 20px;
     font-family: var(--font-family);
     background-color: var(--light-mode-background);
     color: var(--text-light-color);
 }
+/* 
+#myfirstblog{
+    display: flex;
+    justify-content: start;
+} */
+
+#backbtn{
+    margin-right: 5px;
+}
+.divbtn{
+
+    display: flex;
+    justify-content: end;
+align-items: center;
+ margin-right: 5px;
+}
+
 .toggle.active{
     background: var(--dark-made-background);
 }
@@ -112,10 +132,10 @@ header {
 
 } 
 
-#backbtn{
+/* #backbtn{
     display: block;
     
-}
+} */
 
 .footer{
     width: 100%;
@@ -172,15 +192,12 @@ header {
 
 }
 
-#myfirstblog{
-    text-align: center;
-}
+
 
 .article{
     display: block;
     border-style: solid;
-    border: 10px black;
-    border-top: black;
+    border: 2px black solid;
 
 }
 
@@ -188,3 +205,4 @@ header {
     border-style: solid;
     border-top: black;
 } */
+
