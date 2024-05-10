@@ -13,7 +13,7 @@ Once submitted, you can then view your submitted blog in the next page.
 When you click on the top left toggle switch, you can set the webpage to dark color or go back to the original light color.
 Enjoy Blogging.
 
-Deployed version link:
+Deployed version link: https://minikozort.github.io/My-Daily-Blog/
 
 ![alt text](<indexhtml pic.PNG>)
 ![alt text](<bloghtml pic.PNG>)
