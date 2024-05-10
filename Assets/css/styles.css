@@ -1,9 +1,9 @@
 /* Setting the common attributes colors */
 :root {
-    --dark-made-background: #1b1b1b;
+    --dark-mode-background: #1b1b1b;
     --light-mode-background: #9acdd1;
     --cirle-light-color: #f8b781;
-    --cicle-dark-color: #830349;
+    --cirle-dark-color: #830349;
     --text-dark-color: #000;
     --text-light-color: #fff;
     --font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -26,6 +26,7 @@ body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
+    background-color: var(--light-mode-background);
 }
 
 ​h1,
@@ -53,17 +54,15 @@ code {
 ul {
     list-style: none;
 }
-/* Sets the body background color and display */
-body{
-    background-color: var(--light-mode-background)
-}
+
+
 /* when toggled changes the background color */
 .bodytoggle.active{
-    background: var(--dark-made-background);
+    background: var(--dark-mode-background);
 }
 /* when toggled changes the background color */
 .toggleback.active{
-    background: var(--dark-made-background);
+    background: var(--dark-mode-background);
 /* Sets the paramiters of the dark-mode - light mode button */
 }
 
@@ -77,7 +76,12 @@ body{
 
 .headerstyle{
     border-bottom: solid;
-    border-color: var(--dark-made-background);
+    border-color: var(--dark-mode-background);
+}
+.headerstyle.active{
+    background: var(--dark-mode-background);
+    border-bottom: solid;
+    border-color: var(--light-mode-background);
 }
 #togglemode{
     position: relative;
@@ -107,7 +111,7 @@ body{
 }
 #togglemode.active .indicator{
     Left: 40px;
-    background: var(--dark-made-background);
+    background: var(--light-mode-background);
     box-shadow: 0px 8px 40px rgba(0,0,0,0.5), 
                 inset 0px 4px 4px rgba(255,255,255,0.2), 
                 inset 0px -4px 4px rgba(255,255,255,0.2);  
@@ -123,9 +127,15 @@ body{
     height: 100vh;
     border-top: solid;
     border-right: solid;
+    border-color: var(--dark-mode-background);
     margin-top: 20px;
     margin-right: 20px;
     
+}
+.box.active{
+    border-top: solid;
+    border-right: solid;
+    border-color: var(--light-mode-background);
 }
 
 .circle{
@@ -134,11 +144,20 @@ body{
     height: 65%;
     border-radius: 50%;
     background: var(--cirle-light-color);
+    border-color: var(--dark-mode-background);
     align-items: center;
     justify-content: center;
     border: solid;
     text-wrap: wrap;
-    font-size: 400%;
+    color: var(--text-dark-color);
+    font-size: 5vh;
+}
+
+.circle.active{
+    background: var(--cirle-dark-color);
+    border: solid;
+    border-color: var(--light-mode-background);
+    color: var(--text-light-color)
 }
 
 .toggleback{

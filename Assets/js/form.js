@@ -16,9 +16,11 @@ submitButton.addEventListener('click', function (event) {
     if (userName.value == "" || titleName.value == "" || userBlogEntry.value == "") {
 
         const alertMessage = ('Please Complete All Form');
-        let error = document.getElementById('error');
+        let error = document.querySelector('.error');
         error.textContent = alertMessage;
-        setTimeout(alertMessage, 3000);
+        setTimeout(function(){
+            error.textContent = "";
+        }, 3000);
         return;
     }
 

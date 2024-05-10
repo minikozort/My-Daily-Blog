@@ -36,7 +36,7 @@ function getPost() {
             article.appendChild(contentEntry);
 
             let usernameEntry = document.createElement('p');
-            usernameEntry.textContent = blogItem[i].userName;
+            usernameEntry.textContent = "Posted by : " + blogItem[i].userName;
             usernameEntry.setAttribute('class' , 'enteredusername');
             article.appendChild(usernameEntry);
 

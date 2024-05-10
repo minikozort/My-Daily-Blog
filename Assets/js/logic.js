@@ -1,12 +1,28 @@
 const body = document.querySelector('body');
 const toggle = document.getElementById('togglemode');
-const form = document.querySelector('form');
+const form = document.querySelector('.form');
+const header = document.querySelector('.headerstyle');
+const btn = document.querySelector('.btnclass');
+const box = document.querySelector('.box');
+const circle = document.querySelector('.circle');
+const divForm = document.querySelector('.divform');
+// const title = document.querySelectorAll('.enteredtitle');
+// const userName = document.querySelectorAll('.enteredusername');
+// const blogEntry = document.querySelectorAll('.blogentry');
+// const article = document.querySelectorAll('.article');
 toggle.onclick = function () {
-    toggle.classList.toggle('active');
     body.classList.toggle('active');
+    toggle.classList.toggle('active');
     form.classList.toggle('active');
-
-
+    header.classList.toggle('active');
+    btn.classList.toggle('active');
+    box.classList.toggle('active');
+    circle.classList.toggle('active');
+    divForm.classList.toggle('active');
+    // title.classList.toggle('active');
+    // userName.classList.toggle('active');
+    // blogEntry.classList.toggle('active');
+    // article.classList.toggle('active');
 }
 
 
